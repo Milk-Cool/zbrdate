@@ -1,0 +1,122 @@
+* {
+	font-family: system-ui;
+	user-select: none;
+}
+
+div.main {
+	position: fixed;
+	width: 1177px;
+	height: 883px;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+div.main.-bg-canteen {
+	background: url(backgrounds/canteen.jpg);
+}
+div.main.-bg-ficus {
+	background: url(backgrounds/ficus.jpg);
+}
+div.main.-bg-second_floor {
+	background: url(backgrounds/second_floor.jpg);
+}
+div.main.-bg-stadium {
+	background: url(backgrounds/stadium.jpg);
+}
+div.main.-bg-title {
+	background: url(backgrounds/title.jpg);
+}
+div.main.-bg-exit {
+	background: url(backgrounds/exit.jpg);
+}
+
+.A {
+	position: absolute;
+}
+.C {
+	left: 50%;
+	transform: translateX(-50%);
+}
+.H {
+	display: none;
+}
+
+img.logo {
+	left: 50%;
+	transform: translateX(-50%);
+	animation-name: logo;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+@keyframes logo {
+	0%, 100% { top: 5%; }
+	50% { top: 10%; }
+}
+
+.dialogue {
+	bottom: 0;
+	width: calc(100% - 64px);
+	height: 200px;
+	margin: 32px;
+	z-index: 5;
+}
+
+button, .dialogue, .lovescale {
+	font-size: 200%;
+	font-weight: bolder;
+	padding: 8px;
+	color: white;
+	background: lightblue;
+	border: 4px solid cornflowerblue;
+	border-radius: 16px;
+	box-shadow: 0 4px darkblue;
+	box-sizing: border-box;
+	min-width: 300px;
+}
+.dialogue > #author {
+	color: cornflowerblue;
+	font-weight: bold;
+}
+button {
+	cursor: pointer;
+}
+button:active {
+	box-shadow: 0 0 transparent;
+	margin-top: 4px;
+}
+
+#arrow {
+	bottom: 40px;
+	right: 40px;
+	text-shadow: 1px 1px 0 black;
+	color: white;
+	font-size: xx-large;
+	z-index: 10;
+}
+
+button.start {
+	top: 50%;
+}
+button.load {
+	top: 60%;
+}
+button.credits {
+	top: 70%;
+}
+button.save {
+	min-width: none;
+	width: min-content;
+	top: 32px;
+	left: 32px;
+	display: none;
+	z-index: 10;
+}
+
+img.sprite {
+	bottom: 50px;
+	max-height: 800px;
+}
+
+.lovescale {
+	top: 32px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Симулятор свиданий с Андреем</title>
+		<meta charset="utf-8">
+		<link href="style.css" rel="stylesheet">
+		<script src="story.js"></script>
+		<script src="script.js" defer></script>
+	</head>
+	<body bgcolor="black">
+		<audio hidden loop id="bg-music"></audio>
+		<div class="C main -bg-title">
+			<img class="A C logo" src="logo.png">
+			<button class="A C start" onclick="loadGame()">Начать</button>
+			<button class="A C load" onclick="loadGame(prompt(`Введите код сохранения`))">Загрузить код</button>
+			<button class="A C credits" onclick="window.open('credits.html')">Благодарности</button>
+			<img class="A C sprite">
+			<div class="A H dialogue">
+				<span id="author"></span><br>
+				<span id="dialogue-text"></span>
+			</div>
+			<span class="A H" id="arrow">↲</span>
+			<button class="A save" onclick="alert('Ваш код сохранения: `' + saveGame() + '`')">💾 Сохранить</button>
+			<progress class="A C H lovescale" max="100"></progress>
+		</div>
+	</body>
+</html>
