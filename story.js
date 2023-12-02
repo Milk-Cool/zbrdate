@@ -405,22 +405,22 @@ const story = [
 	},
 	{
 		"type": "dialogue",
-		"author": "andrey",
+		"author": "me",
 		"text": "(Решение принялось само собой.)"
 	},
 	{
 		"type": "dialogue",
-		"author": "andrey",
+		"author": "me",
 		"text": "(Мы побежали.)"
 	},
 	{
 		"type": "dialogue",
-		"author": "andrey",
+		"author": "me",
 		"text": "(Училка, как ни странно, даже не пыталась нас догнать.)"
 	},
 	{
 		"type": "dialogue",
-		"author": "andrey",
+		"author": "me",
 		"text": "(Хоть бежать было и совсем немного, прибежав, я уже себя не чувствовал.)"
 	},
 	{
